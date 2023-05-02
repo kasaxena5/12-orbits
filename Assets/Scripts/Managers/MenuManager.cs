@@ -9,7 +9,11 @@ public class MenuManager : MonoBehaviour
         SceneLoader.Instance.currentScene = "GameScene";
         SceneLoader.Instance.StartScene();
     }
-
+    public void ReturnToMenu()
+    {
+        SceneLoader.Instance.currentScene = "MenuScene";
+        SceneLoader.Instance.StartScene();
+    }
     public void QuitGame()
     {
         Application.Quit();
